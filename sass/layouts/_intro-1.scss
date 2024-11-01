@@ -1,0 +1,25 @@
+.main-content .section-intro-1 .content {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  position: relative;
+  .decoration {
+    position: absolute;
+    align-self: flex-end;
+    margin-right: -7rem;
+    margin-top: -5.5rem;
+    .star {
+      &-1 {
+        rotate: 7.13deg;
+        width: 10rem;
+      }
+      &-2 {
+        rotate: 29.74deg;
+        width: 5rem;
+        margin-left: -6.3rem;
+        margin-bottom: -2rem;
+        // filter: drop-shadow(0rem 0rem 4px black);
+      }
+    }
+  }
+}

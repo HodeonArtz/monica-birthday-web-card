@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="Mònica Fernandez, Cumpleaños, Birthday, Love, Amor"
+    />
+    <meta
+      name="description"
+      content="Página web oficial para desear el aniversario de Mònica"
+    />
+    <meta name="author" content="Hodeon" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./js/background.js" defer></script>
+    <script src="./js/scroll.js" defer></script>
+    <script src="./js/reset.js" defer></script>
+    <script src="./js/sectionAnimations.js" defer></script>
+    <script src="./js/cakeAnimation.js" defer></script>
+    <script src="./js/requestAnimation.js" defer></script>
+    <title>Cumple de Mònica</title>
+  </head>
+  <body>
+    <div class="loader"></div>
+    <!-- -------------- BACKGROUND -------------- -->
+    <div class="bg bg--green">
+      <section class="bg__textures">
+        <div class="texture__dots-container">
+          <div class="pos-relative">
+            <img
+              src="./assets/img/textures/green_dots.png"
+              alt="textura"
+              class="texture__dots texture__dots--green"
+            />
+            <img
+              src="./assets/img/textures/yellow_dots.png"
+              alt="textura"
+              class="texture__dots texture__dots--yellow"
+            />
+          </div>
+        </div>
+
+        <img
+          src="./assets/img/textures/black_paper.jpg"
+          alt="textura"
+          class="texture__black-paper"
+        />
+        <div class="texture__paper-container" style="transform: translateY(0)">
+          <div class="pos-relative">
+            <img
+              src="./assets/img/textures/yellow_paper.png"
+              alt="textura"
+              class="texture__paper texture__paper--yellow"
+            />
+            <img
+              src="./assets/img/textures/green_paper.png"
+              alt="textura"
+              class="texture__paper texture__paper--green"
+            />
+          </div>
+        </div>
+        <img
+          src="./assets/img/gif/usa/flag.gif"
+          alt="usa-flag"
+          class="texture__usa-bg"
+        />
+      </section>
+      <section class="bg__marquee">
+        <div class="text text-1">안녕! 안녕! 안녕! 안녕! 안녕!</div>
+        <div class="text text-2">
+          생일 축하합니다! 생일 축하합니다! 생일 축하합니다! 생일 축하합니다!
+          생일 축하합니다! 생일 축하합니다!
+        </div>
+      </section>
+      <section class="bg__decoration">
+        <div class="pos-relative">
+          <div class="decoration-icons">
+            <div class="pos-relative">
+              <div class="decoration decoration__star">
+                <div class="pos-relative">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.0968 0.723938L14.5305 7.05178C14.8717 7.93874 15.0423 8.38222 15.3075 8.75525C15.5426 9.08586 15.8314 9.37472 16.1621 9.60981C16.5351 9.87506 16.9786 10.0456 17.8655 10.3868L24.1934 12.8205L17.8655 15.2543C16.9786 15.5955 16.5351 15.766 16.1621 16.0313C15.8314 16.2664 15.5426 16.5552 15.3075 16.8858C15.0423 17.2589 14.8717 17.7024 14.5305 18.5893L12.0968 24.9172L9.66298 18.5893C9.32184 17.7024 9.15127 17.2589 8.88602 16.8858C8.65094 16.5552 8.36208 16.2664 8.03146 16.0313C7.65843 15.766 7.21495 15.5955 6.32799 15.2543L0.000152588 12.8205L6.32799 10.3868C7.21495 10.0456 7.65843 9.87506 8.03146 9.60981C8.36208 9.37472 8.65094 9.08586 8.88602 8.75525C9.15127 8.38222 9.32184 7.93874 9.66298 7.05178L12.0968 0.723938Z"
+                      fill="#EBC230"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="decoration decoration__cross">
+                <div class="pos-relative">
+                  <svg
+                    width="19"
+                    height="42"
+                    viewBox="0 0 19 42"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.30235 2.80304V39.0852M2.85327 20.9441H15.7514"
+                      stroke="#EBC230"
+                      stroke-width="5.48857"
+                      stroke-linecap="square"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="decoration decoration__heart">
+                <div class="pos-relative">
+                  <svg
+                    width="21"
+                    height="19"
+                    viewBox="0 0 21 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.2831 2.19778C8.22571 -0.207449 4.79493 -0.854448 2.21721 1.34802C-0.360521 3.55049 -0.723429 7.2329 1.30087 9.83776C2.98395 12.0035 8.07751 16.5713 9.7469 18.0497C9.93367 18.2151 10.0271 18.2978 10.136 18.3303C10.2311 18.3587 10.3351 18.3587 10.4302 18.3303C10.5391 18.2978 10.6325 18.2151 10.8192 18.0497C12.4886 16.5713 17.5822 12.0035 19.2653 9.83776C21.2896 7.2329 20.971 3.52732 18.3489 1.34802C15.7269 -0.83128 12.3404 -0.207449 10.2831 2.19778Z"
+                      fill="#EBC230"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="decoration-stickers">
+            <div class="pos-relative">
+              <div class="sticker">
+                <div class="pos-relative">
+                  <img
+                    class="sticker-img sticker-img--green"
+                    src="./assets/img/png/green/chicken.png"
+                    alt="green"
+                  />
+                  <img
+                    class="sticker-img sticker-img--yellow"
+                    src="./assets/img/png/yellow/chicken.png"
+                    alt="yellow"
+                  />
+                </div>
+              </div>
+              <div class="sticker">
+                <div class="pos-relative">
+                  <img
+                    class="sticker-img sticker-img--green"
+                    src="./assets/img/png/green/chimmy.png"
+                    alt="green"
+                  />
+                  <img
+                    class="sticker-img sticker-img--yellow"
+                    src="./assets/img/png/yellow/chimmy.png"
+                    alt="yellow"
+                  />
+                </div>
+              </div>
+              <div class="sticker">
+                <div class="pos-relative">
+                  <img
+                    class="sticker-img sticker-img--green"
+                    src="./assets/img/png/green/cinnamoroll-1.png"
+                    alt="green"
+                  />
+                  <img
+                    class="sticker-img sticker-img--yellow"
+                    src="./assets/img/png/yellow/cinnamoroll-1.png"
+                    alt="yellow"
+                  />
+                </div>
+              </div>
+              <div class="sticker">
+                <div class="pos-relative">
+                  <img
+                    class="sticker-img sticker-img--green"
+                    src="./assets/img/png/green/cinnamoroll-2.png"
+                    alt="green"
+                  />
+                  <img
+                    class="sticker-img sticker-img--yellow"
+                    src="./assets/img/png/yellow/cinnamoroll-2.png"
+                    alt="yellow"
+                  />
+                </div>
+              </div>
+              <div class="sticker">
+                <div class="pos-relative">
+                  <img
+                    class="sticker-img sticker-img--green"
+                    src="./assets/img/png/green/cooky.png"
+                    alt="green"
+                  />
+                  <img
+                    class="sticker-img sticker-img--yellow"
+                    src="./assets/img/png/yellow/cooky.png"
+                    alt="yellow"
+                  />
+                </div>
+              </div>
+              <div class="sticker">
+                <div class="pos-relative">
+                  <img
+                    class="sticker-img sticker-img--green"
+                    src="./assets/img/png/green/daft-punk.png"
+                    alt="green"
+                  />
+                  <img
+                    class="sticker-img sticker-img--yellow"
+                    src="./assets/img/png/yellow/daft-punk.png"
+                    alt="yellow"
+                  />
+                </div>
+              </div>
+              <div class="sticker">
+                <div class="pos-relative">
+                  <img
+                    class="sticker-img sticker-img--green"
+                    src="./assets/img/png/green/kuromi-1.png"
+                    alt="green"
+                  />
+                  <img
+                    class="sticker-img sticker-img--yellow"
+                    src="./assets/img/png/yellow/kuromi-1.png"
+                    alt="yellow"
+                  />
+                </div>
+              </div>
+              <div class="sticker">
+                <div class="pos-relative">
+                  <img
+                    class="sticker-img sticker-img--green"
+                    src="./assets/img/png/green/kuromi-2.png"
+                    alt="green"
+                  />
+                  <img
+                    class="sticker-img sticker-img--yellow"
+                    src="./assets/img/png/yellow/kuromi-2.png"
+                    alt="yellow"
+                  />
+                </div>
+              </div>
+              <div class="sticker">
+                <div class="pos-relative">
+                  <img
+                    class="sticker-img sticker-img--green"
+                    src="./assets/img/png/green/polar.png"
+                    alt="green"
+                  />
+                  <img
+                    class="sticker-img sticker-img--yellow"
+                    src="./assets/img/png/yellow/polar.png"
+                    alt="yellow"
+                  />
+                </div>
+              </div>
+              <div class="sticker">
+                <div class="pos-relative">
+                  <img
+                    class="sticker-img sticker-img--green"
+                    src="./assets/img/png/green/pompompurin-1.png"
+                    alt="green"
+                  />
+                  <img
+                    class="sticker-img sticker-img--yellow"
+                    src="./assets/img/png/yellow/pompompurin-1.png"
+                    alt="yellow"
+                  />
+                </div>
+              </div>
+              <div class="sticker">
+                <div class="pos-relative">
+                  <img
+                    class="sticker-img sticker-img--green"
+                    src="./assets/img/png/green/pompompurin-2.png"
+                    alt="green"
+                  />
+                  <img
+                    class="sticker-img sticker-img--yellow"
+                    src="./assets/img/png/yellow/pompompurin-2.png"
+                    alt="yellow"
+                  />
+                </div>
+              </div>
+              <div class="sticker">
+                <div class="pos-relative">
+                  <img
+                    class="sticker-img sticker-img--green"
+                    src="./assets/img/png/green/rj.png"
+                    alt="green"
+                  />
+                  <img
+                    class="sticker-img sticker-img--yellow"
+                    src="./assets/img/png/yellow/rj.png"
+                    alt="yellow"
+                  />
+                </div>
+              </div>
+              <div class="sticker">
+                <div class="pos-relative">
+                  <img
+                    class="sticker-img sticker-img--green"
+                    src="./assets/img/png/green/tata.png"
+                    alt="green"
+                  />
+                  <img
+                    class="sticker-img sticker-img--yellow"
+                    src="./assets/img/png/yellow/tata.png"
+                    alt="yellow"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="wrapper">
+      <main class="main-content">
+        <div class="screen screen-1">
+          <!-- -------------- INTRO-1 -------------- -->
+          <section class="section-intro-1 scroll-1" data-background="green">
+            <div class="content">
+              <h1 class="msg text-appear-anim">¡Halooo!</h1>
+              <div class="decoration">
+                <img
+                  src="./assets/svg/icons/yellow/star.svg"
+                  alt=""
+                  class="star-1"
+                />
+                <img
+                  src="./assets/svg/icons/yellow/star.svg"
+                  alt=""
+                  class="star-2"
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- -------------- INTRO-2 -------------- -->
+          <section class="section-intro-2 scroll-1" data-background="green">
+            <h3 class="msg">solo quería desearte...</h3>
+          </section>
+
+          <!-- -------------- JOKE -------------- -->
+          <section class="section-joke scroll-1" data-background="usa">
+            <div class="content">
+              <h1 class="msg">Happy 4th of July!</h1>
+              <img
+                src="./assets/img/gif/usa/fireworks-1.gif"
+                alt="fireworks"
+                class="decoration__fireworks-1"
+              />
+              <img
+                src="./assets/img/gif/usa/fireworks-2.gif"
+                alt="fireworks"
+                class="decoration__fireworks-2"
+              />
+              <img
+                src="./assets/img/png/usa/gun.png"
+                alt="gun"
+                class="decoration__gun"
+              />
+              <img
+                src="./assets/img/png/usa/statue.png"
+                alt="statue"
+                class="decoration__statue"
+              />
+              <img
+                src="./assets/img/png/usa/eagle.png"
+                alt="eagle"
+                class="decoration__eagle"
+              />
+            </div>
+          </section>
+
+          <!-- -------------- INTRO-TRANSITION -------------- -->
+          <section
+            class="section-intro-transition scroll-1"
+            data-background="black"
+          >
+            <h5 class="subtitle">es broma xd</h5>
+            <h2 class="msg">también quería desearte...</h2>
+          </section>
+
+          <!-- -------------- SECTION START ----------------- -->
+          <section
+            class="section-start scroll-1 yellow-bg"
+            data-background="yellow"
+          >
+            <h2 class="msg">¡Feliz Cumpleaños!</h2>
+            <h1 class="birthday-girl">Mònica</h1>
+            <h4 class="wishes">
+              <span class="names-container">
+                <span class="names">
+                  <span class="name">Marti</span>
+                  <span class="name">Mica</span>
+                  <span class="name">Trufa</span>
+                  <span class="name">Tu mejor amiga</span>
+                  <span class="name">Akisha</span>
+                  <span class="name">Hugo</span>
+                  <span class="name">Tu mamá</span>
+                  <span class="name">Tu papá</span>
+                  <span class="name">Mi mamá</span>
+                  <span class="name">Mi papá</span>
+                  <span class="name">Txema</span>
+                  <span class="name">Todo el mundo</span>
+                  <span class="name">La manzana Jonathan</span>
+                  <span class="name">Polar</span>
+                  <span class="name">Marti</span>
+                  <span class="name">Mica</span>
+                </span>
+              </span>
+              <span class="text"> te desea feliz cumpleaños </span>
+            </h4>
+            <div class="decoration"></div>
+          </section>
+          <div
+            class="section section-start-scroll"
+            data-background="yellow"
+          ></div>
+        </div>
+
+        <div class="screen screen-2">
+          <!-- -------------- CAKE -------------- -->
+          <section
+            class="section-cake scroll-2 yellow-bg"
+            data-background="yellow"
+          >
+            <h2 class="title">
+              ¡Felices
+              <span class="years">
+                <span class="digit digit-1">
+                  <span class="number">0</span>
+                  <span class="number">1</span>
+                </span>
+                <span class="digit digit-2">
+                  <span class="number">0</span>
+                  <span class="number">1</span>
+                  <span class="number">2</span>
+                  <span class="number">3</span>
+                  <span class="number">4</span>
+                  <span class="number">5</span>
+                  <span class="number">6</span>
+                  <span class="number">7</span>
+                  <span class="number">8</span>
+                  <span class="number">9</span>
+                </span>
+              </span>
+              años!
+            </h2>
+            <h4 class="subtitle">
+              <span class="text-1">Ahora pide un deseo</span>
+              <span class="text-2"> ¡Esperemos que se cumpla tu deseo! </span>
+            </h4>
+            <div class="cake">
+              <div class="cake__candles">
+                <div class="candle candle-1">
+                  <img
+                    src="./assets/svg/candle.svg"
+                    alt="candle-base-1"
+                    class="candle__base"
+                  />
+                  <div class="candle__fire-container">
+                    <img
+                      src="./assets/svg/fire.svg"
+                      alt="candle-fire-1"
+                      class="candle__fire"
+                    />
+                  </div>
+                  <div class="candle__smoke">
+                    <img src="./assets/svg/smoke.svg" alt="smoke" />
+                    <img src="./assets/svg/smoke.svg" alt="smoke" />
+                  </div>
+                </div>
+                <div class="candle candle-2">
+                  <img
+                    src="./assets/svg/candle.svg"
+                    alt="candle-base-2"
+                    class="candle__base"
+                  />
+                  <div class="candle__fire-container">
+                    <img
+                      src="./assets/svg/fire.svg"
+                      alt="candle-fire-2"
+                      class="candle__fire"
+                    />
+                  </div>
+                  <div class="candle__smoke">
+                    <img src="./assets/svg/smoke.svg" alt="smoke" />
+                    <img src="./assets/svg/smoke.svg" alt="smoke" />
+                  </div>
+                </div>
+                <div class="candle candle-3">
+                  <img
+                    src="./assets/svg/candle.svg"
+                    alt="candle-base-3"
+                    class="candle__base"
+                  />
+                  <div class="candle__fire-container">
+                    <img
+                      src="./assets/svg/fire.svg"
+                      alt="candle-fire-3"
+                      class="candle__fire"
+                    />
+                  </div>
+                  <div class="candle__smoke">
+                    <img src="./assets/svg/smoke.svg" alt="smoke" />
+                    <img src="./assets/svg/smoke.svg" alt="smoke" />
+                  </div>
+                </div>
+                <div class="candle candle-4">
+                  <img
+                    src="./assets/svg/candle.svg"
+                    alt="candle-base-4"
+                    class="candle__base"
+                  />
+                  <div class="candle__fire-container">
+                    <img
+                      src="./assets/svg/fire.svg"
+                      alt="candle-fire-4"
+                      class="candle__fire"
+                    />
+                  </div>
+                  <div class="candle__smoke">
+                    <img src="./assets/svg/smoke.svg" alt="smoke" />
+                    <img src="./assets/svg/smoke.svg" alt="smoke" />
+                  </div>
+                </div>
+                <div class="candle candle-5">
+                  <img
+                    src="./assets/svg/candle.svg"
+                    alt="candle-base-5"
+                    class="candle__base"
+                  />
+                  <div class="candle__fire-container">
+                    <img
+                      src="./assets/svg/fire.svg"
+                      alt="candle-fire-5"
+                      class="candle__fire"
+                    />
+                  </div>
+                  <div class="candle__smoke">
+                    <img src="./assets/svg/smoke.svg" alt="smoke" />
+                    <img src="./assets/svg/smoke.svg" alt="smoke" />
+                  </div>
+                </div>
+                <div class="candle candle-6">
+                  <img
+                    src="./assets/svg/candle.svg"
+                    alt="candle-base-6"
+                    class="candle__base"
+                  />
+                  <div class="candle__fire-container">
+                    <img
+                      src="./assets/svg/fire.svg"
+                      alt="candle-fire-6"
+                      class="candle__fire"
+                    />
+                  </div>
+                  <div class="candle__smoke">
+                    <img src="./assets/svg/smoke.svg" alt="smoke" />
+                    <img src="./assets/svg/smoke.svg" alt="smoke" />
+                  </div>
+                </div>
+                <div class="candle candle-7">
+                  <img
+                    src="./assets/svg/candle.svg"
+                    alt="candle-base-7"
+                    class="candle__base"
+                  />
+                  <div class="candle__fire-container">
+                    <img
+                      src="./assets/svg/fire.svg"
+                      alt="candle-fire-7"
+                      class="candle__fire"
+                    />
+                  </div>
+                  <div class="candle__smoke">
+                    <img src="./assets/svg/smoke.svg" alt="smoke" />
+                    <img src="./assets/svg/smoke.svg" alt="smoke" />
+                  </div>
+                </div>
+              </div>
+              <img src="./assets/svg/cake.svg" alt="cake" class="cake__dish" />
+            </div>
+            <h5 class="text">
+              Haz <span class="bold">clic</span> sobre el pastel para soplar las
+              velas 🌬
+            </h5>
+          </section>
+        </div>
+
+        <div class="screen screen-3">
+          <!-- -------------- GIFT-1 -------------- -->
+          <section
+            class="section-gift section-gift-1 scroll-3"
+            data-background="green"
+          >
+            <h2 class="title">
+              <span class="text-1">
+                ¡Abre el <span class="bold">regalo</span>!
+              </span>
+              <span class="text-2">¡Felicidades!</span>
+            </h2>
+            <h4 class="subtitle">
+              <span class="text-1">A ver que será...</span>
+              <span class="text-2">Una baraja de cartas muy bonita </span>
+            </h4>
+            <div class="present present-1">
+              <img
+                class="present__actual-gift present__actual-gift-1"
+                src="./assets/img/png/cards/cards-front.png"
+                alt="gift-1"
+              />
+
+              <img
+                src="./assets/svg/gift/green/box-gift.svg"
+                class="present__box"
+                alt="present-box"
+              />
+              <img
+                src="./assets/svg/gift/green/cover-gift.svg"
+                class="present__lid"
+                alt="present-lid"
+              />
+            </div>
+          </section>
+          <div class="section-gift-1-object"></div>
+
+          <!-- -------------- GIFT-2 -------------- -->
+          <section
+            class="section-gift section-gift-2 scroll-4 yellow-bg"
+            data-background="yellow"
+          >
+            <h2 class="title">
+              <span class="text-1">¿Qué?</span>
+              <span class="text-2">¿Qué será?</span>
+            </h2>
+            <h4 class="subtitle">
+              <span class="text-1">¿Hay más?</span>
+              <span class="text-2">Eso ya lo veremos cuando nos veamos...</span>
+            </h4>
+            <div class="present present-2">
+              <img
+                class="present__actual-gift present__actual-gift-2"
+                src="./assets/svg/gift/mystery-gift.svg"
+                alt="📸"
+              />
+              <img
+                src="./assets/svg/gift/yellow/box-gift.svg"
+                class="present__box"
+                alt="present-box"
+              />
+              <img
+                src="./assets/svg/gift/yellow/cover-gift.svg"
+                class="present__lid"
+                alt="present-lid"
+              />
+            </div>
+          </section>
+        </div>
+        <div class="section-gift-2-object"></div>
+        <div class="section-gift-scroll"></div>
+
+        <div class="screen screen-4">
+          <!-- -------------- MSG -------------- -->
+          <section
+            class="section-msg scroll-5 scroll-6 yellow-bg"
+            data-background="yellow"
+          >
+            <h2 class="title">¡Feliz Cumpleaños!</h2>
+            <div class="content">
+              <div class="moni-img">
+                <div class="img img-2">
+                  <img
+                    src="./assets/img/monica/moni2.jpg"
+                    alt="Monica"
+                    class="curr-img"
+                  />
+                </div>
+
+                <div class="img img-9">
+                  <img
+                    src="./assets/img/monica/moni9.jpg"
+                    alt="Monica"
+                    class="curr-img"
+                  />
+                </div>
+                <div class="img img-10">
+                  <img
+                    src="./assets/img/monica/moni10.jpg"
+                    alt="Monica"
+                    class="curr-img"
+                  />
+                </div>
+                <div class="img img-12">
+                  <img
+                    src="./assets/img/monica/moni12.jpg"
+                    alt="Monica"
+                    class="curr-img"
+                  />
+                </div>
+                <div class="img img-13">
+                  <img
+                    src="./assets/img/monica/moni13.jpg"
+                    alt="Monica"
+                    class="curr-img"
+                  />
+                </div>
+              </div>
+
+              <div class="texts">
+                <p class="text text-1">
+                  ¡Ya tienes 19! Ya sé en lo que estarás pensando, pero el
+                  tiempo es algo que no se puede detener, y probablemente no
+                  existirían cumpleaños tan especiales como el tuyo.
+                  <br />
+                </p>
+                <p class="text text-2">
+                  Espero que disfrutes mucho este día tan especial, has hecho
+                  mucho por mí y por los demás, y te mereces tener lo mejor y
+                  que tus sueños se cumplan. <br />
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="screen screen-5">
+          <!-- -------------- END -------------- -->
+          <section
+            class="section-end scroll-7 yellow-bg"
+            data-background="yellow"
+          >
+            <h4 class="subtitle">¡Felicidades a la mejor del universo!</h4>
+            <h2 class="title">Con muchísimo amor,</h2>
+            <img
+              src="./assets/img/png/hdn-logo.png"
+              alt="hdn-logo"
+              class="hdn-logo"
+            />
+          </section>
+        </div>
+      </main>
+    </div>
+    <div class="scroller">
+      <div class="screen screen-1">
+        <div class="section section-intro-1" data-background="green"></div>
+        <div class="section section-intro-2" data-background="green"></div>
+        <div class="section section-joke" data-background="usa"></div>
+        <div
+          class="section section-intro-transition"
+          data-background="black"
+        ></div>
+        <div class="section section-start" data-background="yellow"></div>
+        <div
+          class="section section-start-scroll"
+          data-background="yellow"
+        ></div>
+      </div>
+      <div class="screen screen-2">
+        <div class="section section-cake" data-background="yellow"></div>
+      </div>
+      <div class="screen screen-3">
+        <div class="section section-gift-1" data-background="green"></div>
+        <div
+          class="section section-gift-1-object"
+          data-background="green"
+        ></div>
+        <div class="section section-gift-2" data-background="yellow"></div>
+        <div
+          class="section section-gift-2-object"
+          data-background="yellow"
+        ></div>
+        <div class="section section-gift-scroll" data-background="yellow"></div>
+      </div>
+      <div class="screen screen-4">
+        <div
+          class="section section-msg section-msg-1"
+          data-background="yellow"
+        ></div>
+        <div
+          class="section section-msg section-msg-2"
+          data-background="yellow"
+        ></div>
+      </div>
+      <div class="screen screen-5">
+        <div class="section section-end" data-background="yellow"></div>
+      </div>
+    </div>
+  </body>
+</html>

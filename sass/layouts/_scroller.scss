@@ -1,0 +1,33 @@
+.wrapper {
+  position: fixed;
+  height: 100vh;
+  overflow-y: hidden;
+  width: 100%;
+  z-index: 2;
+}
+.scroller,
+.scroller .screen {
+  display: flex;
+  flex-direction: column;
+  // gap: 25vh;
+  width: 100%;
+}
+
+.scroller {
+  top: 0;
+  .screen {
+    .section {
+      height: 200vh;
+      width: 100%;
+      &.section-joke {
+        height: 300vh;
+      }
+      &.section-start {
+        height: 350vh;
+      }
+      &.section-msg {
+        height: 600vh;
+      }
+    }
+  }
+}

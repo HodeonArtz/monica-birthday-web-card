@@ -1,0 +1,99 @@
+@use "../utils/colors" as c;
+.bg {
+  &,
+  * {
+    transition-property: color, background-color, opacity, path, fill;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-behavior: normal;
+  }
+  &__textures {
+    .texture {
+      &__dots-container {
+        opacity: 0.46;
+      }
+      &__paper-container {
+        // transition: transform 0.7s ease-out;
+        opacity: 0.16;
+      }
+    }
+  }
+  &__decoration {
+    .decoration-stickers {
+      opacity: 1;
+      .sticker-img {
+        animation-timing-function: ease-in-out;
+        animation-duration: 7s;
+        animation-name: rotateSticker;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        @keyframes rotateSticker {
+          from {
+            transform: rotate(10deg);
+          }
+          to {
+            transform: rotate(-10deg);
+          }
+        }
+      }
+    }
+  }
+  &__marquee {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    .text {
+      width: fit-content;
+      position: absolute;
+      white-space: nowrap;
+      animation-timing-function: linear;
+      animation-duration: 40s;
+      animation-name: marquee;
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      @keyframes marquee {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-61.5%);
+        }
+      }
+      &-2 {
+        animation-duration: 120s;
+      }
+    }
+  }
+}
+.loader {
+  position: fixed;
+  background-color: c.$bg-gradient-green;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  z-index: 3;
+  animation-timing-function: ease-in-out;
+  animation-duration: 4s;
+  animation-name: quitLoader;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+
+  @keyframes quitLoader {
+    0% {
+      opacity: 1;
+      z-index: 3;
+    }
+    99% {
+      z-index: 3;
+    }
+    100% {
+      z-index: -1;
+      opacity: 0;
+    }
+  }
+}

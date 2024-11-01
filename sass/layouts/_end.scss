@@ -1,0 +1,9 @@
+.main-content section.section-end {
+  gap: 0.2rem;
+  img {
+    width: 32.5rem;
+    &.hdn-logo {
+      margin: 1rem 0;
+    }
+  }
+}

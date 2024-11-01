@@ -1,0 +1,13 @@
+body {
+  position: relative;
+
+  & > * {
+    position: absolute;
+  }
+}
+.bg {
+  z-index: 1;
+}
+.main-content {
+  z-index: 2;
+}

@@ -1,0 +1,77 @@
+@use "../utils/colors" as c;
+.main-content {
+  *[data-background="green"] {
+    h1,/**/ h2,/**/ h3,/**/ h4,/**/ h5,/**/ p {
+      color: c.$yellowy;
+    }
+    h1,
+    h2 {
+      filter: c.$shadow-yellow;
+    }
+  }
+  *[data-background="yellow"] {
+    h1,/**/ h2,/**/ h3,/**/ h4,/**/ h5,/**/ p {
+      color: c.$greeny;
+    }
+    h1,
+    h2 {
+      filter: c.$shadow-green;
+    }
+  }
+  *[data-background="usa"],
+  *[data-background="black"] {
+    h1,/**/ h2,/**/ h3,/**/ h4,/**/ h5,/**/ p {
+      color: white;
+      filter: c.$shadow-black;
+    }
+  }
+}
+.main-content {
+  .section-intro-1 {
+    .msg.text-appear-anim span {
+      // animation-name: textAppear;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+      // opacity: 0;
+      animation-fill-mode: forwards;
+    }
+  }
+  .section-cake {
+    .cake {
+      cursor: pointer;
+    }
+    .text {
+      transition: opacity ease-in-out 0.4s;
+    }
+    .subtitle {
+      .text-2 {
+        opacity: 0;
+      }
+    }
+  }
+  @keyframes textAppear {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.3;
+    }
+    75% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+/* .main-content {
+  section:not(
+      .section-intro-1,
+      .section-intro-2,
+      .section-joke,
+      .section-intro-transition
+    ) {
+    opacity: 0;
+  }
+} */

@@ -1,0 +1,58 @@
+@use "../utils/colors" as c;
+@use "../utils/properties" as p;
+.bg {
+  &--yellow {
+    background-color: c.$bg-gradient-yellow;
+    .bg__textures {
+      .texture {
+        &__dots {
+          &--yellow {
+            opacity: 0;
+          }
+          &--green {
+            opacity: 1;
+          }
+        }
+        &__paper-container {
+          opacity: 0.26;
+        }
+        &__paper {
+          &--yellow {
+            opacity: 0;
+          }
+          &--green {
+            opacity: 1;
+            display: block;
+          }
+        }
+
+        &__black-paper {
+          opacity: 0;
+        }
+        &__usa-bg {
+          opacity: 0;
+        }
+      }
+    }
+    .bg__marquee {
+      opacity: p.$marquee-opacity;
+      -webkit-text-stroke-color: c.$greeny;
+    }
+    .bg__decoration {
+      .decoration svg {
+        path {
+          stroke: c.$greeny;
+          fill: c.$greeny;
+        }
+      }
+      .sticker-img {
+        &--green {
+          opacity: 1;
+        }
+        &--yellow {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

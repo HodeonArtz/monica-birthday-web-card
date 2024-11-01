@@ -1,0 +1,39 @@
+.bg {
+  &--usa {
+    background-color: black;
+    .bg__textures {
+      .texture {
+        &__dots {
+          &-container {
+            opacity: 0;
+          }
+        }
+        &__paper {
+          &-container {
+            opacity: 0;
+          }
+        }
+        &__black-paper {
+          opacity: 0;
+        }
+        &__usa-bg {
+          opacity: 1;
+        }
+      }
+    }
+    .bg__marquee {
+      opacity: 0;
+    }
+    .bg__decoration {
+      opacity: 0;
+      .sticker-img {
+        &--green {
+          opacity: 0;
+        }
+        &--yellow {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

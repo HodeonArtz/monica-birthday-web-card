@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "Erode-Variable";
+  src: url(../assets/fonts/erode/Erode-Variable.woff2) format("woff2"),
+    url(../assets/fonts/erode/Erode-Variable.woff) format("woff"),
+    url(../assets/fonts/erode/Erode-Variable.ttf) format("truetype");
+  font-weight: 300 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Erode-VariableItalic";
+  src: url(../assets/fonts/erode/Erode-VariableItalic.woff2) format("woff2"),
+    url(../assets/fonts/erode/Erode-VariableItalic.woff) format("woff"),
+    url(../assets/fonts/erode/Erode-VariableItalic.ttf) format("truetype");
+  font-weight: 300 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Recia-Variable";
+  src: url(../assets/fonts/recia/Recia-Variable.woff2) format("woff2"),
+    url(../assets/fonts/recia/Recia-Variable.woff) format("woff"),
+    url(../assets/fonts/recia/Recia-Variable.ttf) format("truetype");
+  font-weight: 300 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Recia-VariableItalic";
+  src: url(../assets/fonts/recia/Recia-VariableItalic.woff2) format("woff2"),
+    url(../assets/fonts/recia/Recia-VariableItalic.woff) format("woff"),
+    url(../assets/fonts/recia/Recia-VariableItalic.ttf) format("truetype");
+  font-weight: 300 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CookieRun-Black";
+  src: url(../assets/fonts/cookierun/CookieRun-Black.woff) format("woff");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+$line-height-percentatge: 70.9;
+$letter-spacing-percentatge: -8;
+@mixin font-spacing(
+  $font-size,
+  $l-height: $line-height-percentatge,
+  $l-spacing: $letter-spacing-percentatge
+) {
+  font-size: $font-size;
+  line-height: $font-size * calc($l-height/100);
+  letter-spacing: $font-size * calc($l-spacing/100);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  font-family: "Erode-Variable";
+}
+h4,
+h5,
+h6,
+p {
+  font-family: "Recia-Variable";
+}
+
+h1 {
+  @include font-spacing(16rem);
+  font-weight: 700;
+}
+h2 {
+  @include font-spacing(6.375rem);
+}
+h3 {
+  @include font-spacing(5.125rem);
+}
+h4 {
+  @include font-spacing(3.125rem);
+}
+h5 {
+  @include font-spacing(1.875rem);
+}
+p {
+  @include font-spacing(3.75rem);
+}
+.bg {
+  &__marquee {
+    @include font-spacing(32rem);
+    text-align: center;
+    -webkit-text-stroke: 0.35rem black;
+    color: rgba($color: #000000, $alpha: 0);
+    font-family: "CookieRun-Black";
+    opacity: 0.3;
+  }
+}
+.main-content {
+  [class^="section-"] {
+    h2,
+    h4 {
+      font-weight: 500;
+    }
+
+    .wishes {
+      font-weight: 500;
+      span.names {
+        font-weight: 800;
+      }
+    }
+  }
+  .section {
+    &-intro-2 .msg {
+      font-weight: 500;
+    }
+    &-intro-transition {
+      .subtitle {
+        font-style: italic;
+        font-weight: 500;
+      }
+      .msg {
+        font-weight: 800;
+      }
+    }
+    &-start {
+      .msg {
+        font-weight: 800;
+      }
+    }
+    &-cake {
+      .years {
+        font-weight: 800;
+        white-space: normal;
+        text-align: center;
+        span {
+          text-align: center;
+          white-space: normal;
+        }
+      }
+      .text {
+        font-weight: 500;
+        .bold {
+          font-weight: 700;
+        }
+      }
+    }
+    &-gift {
+      h2 {
+        height: 6.375rem;
+      }
+      h4 {
+        height: 3.125rem;
+      }
+    }
+    &-msg-1,
+    &-msg-2,
+    &-end {
+      h2 {
+        font-weight: 600;
+      }
+    }
+  }
+}

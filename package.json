@@ -1,0 +1,14 @@
+{
+  "name": "moni19",
+  "version": "1.0.0",
+  "description": "cumpleaños19moni",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass ./sass/main.scss ./css/style.css"
+  },
+  "author": "Hodeon",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

@@ -1,0 +1,147 @@
+/**
+* @license
+*
+* Font Family: Erode
+* Designed by: Nikhil Ranganathan
+* URL: https://www.fontshare.com/fonts/erode
+* © 2024 Indian Type Foundry
+*
+* Erode Light 
+* Erode LightItalic 
+* Erode Regular 
+* Erode Italic 
+* Erode Medium 
+* Erode MediumItalic 
+* Erode Semibold 
+* Erode SemiboldItalic 
+* Erode Bold 
+* Erode BoldItalic 
+* Erode Variable (Variable font)
+* Erode VariableItalic (Variable font)
+
+*
+*/
+@font-face {
+  font-family: "Erode-Light";
+  src: url("../fonts/Erode-Light.woff2") format("woff2"),
+    url("../fonts/Erode-Light.woff") format("woff"),
+    url("../fonts/Erode-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Erode-LightItalic";
+  src: url("../fonts/Erode-LightItalic.woff2") format("woff2"),
+    url("../fonts/Erode-LightItalic.woff") format("woff"),
+    url("../fonts/Erode-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Erode-Regular";
+  src: url("../fonts/Erode-Regular.woff2") format("woff2"),
+    url("../fonts/Erode-Regular.woff") format("woff"),
+    url("../fonts/Erode-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Erode-Italic";
+  src: url("../fonts/Erode-Italic.woff2") format("woff2"),
+    url("../fonts/Erode-Italic.woff") format("woff"),
+    url("../fonts/Erode-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Erode-Medium";
+  src: url("../fonts/Erode-Medium.woff2") format("woff2"),
+    url("../fonts/Erode-Medium.woff") format("woff"),
+    url("../fonts/Erode-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Erode-MediumItalic";
+  src: url("../fonts/Erode-MediumItalic.woff2") format("woff2"),
+    url("../fonts/Erode-MediumItalic.woff") format("woff"),
+    url("../fonts/Erode-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Erode-Semibold";
+  src: url("../fonts/Erode-Semibold.woff2") format("woff2"),
+    url("../fonts/Erode-Semibold.woff") format("woff"),
+    url("../fonts/Erode-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Erode-SemiboldItalic";
+  src: url("../fonts/Erode-SemiboldItalic.woff2") format("woff2"),
+    url("../fonts/Erode-SemiboldItalic.woff") format("woff"),
+    url("../fonts/Erode-SemiboldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Erode-Bold";
+  src: url("../fonts/Erode-Bold.woff2") format("woff2"),
+    url("../fonts/Erode-Bold.woff") format("woff"),
+    url("../fonts/Erode-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Erode-BoldItalic";
+  src: url("../fonts/Erode-BoldItalic.woff2") format("woff2"),
+    url("../fonts/Erode-BoldItalic.woff") format("woff"),
+    url("../fonts/Erode-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 300.0;
+*
+* available axes:
+'wght' (range from 300.0 to 700.0
+*/
+@font-face {
+  font-family: "Erode-Variable";
+  src: url("../fonts/Erode-Variable.woff2") format("woff2"),
+    url("../fonts/Erode-Variable.woff") format("woff"),
+    url("../fonts/Erode-Variable.ttf") format("truetype");
+  font-weight: 300 700;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 300.0;
+*
+* available axes:
+'wght' (range from 300.0 to 700.0
+*/
+@font-face {
+  font-family: "Erode-VariableItalic";
+  src: url("../fonts/Erode-VariableItalic.woff2") format("woff2"),
+    url("../fonts/Erode-VariableItalic.woff") format("woff"),
+    url("../fonts/Erode-VariableItalic.ttf") format("truetype");
+  font-weight: 300 700;
+  font-display: swap;
+  font-style: italic;
+}

@@ -1,0 +1,41 @@
+.main-content section.section-gift {
+  .title,
+  .subtitle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    span[class^="text-"] {
+      position: absolute;
+      // white-space: normal;
+    }
+  }
+  img {
+    width: initial;
+  }
+  .present {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &__lid {
+      width: 26.875rem;
+      margin-bottom: -1rem;
+      order: 1;
+      z-index: 2;
+      transform-origin: center 9.1875rem;
+    }
+    &__box {
+      order: 2;
+      z-index: 3;
+    }
+    &__actual-gift {
+      position: absolute;
+      z-index: 1;
+      width: 50%;
+      opacity: 0;
+    }
+  }
+}

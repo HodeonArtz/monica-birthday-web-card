@@ -1,0 +1,9 @@
+@use "sass:color";
+
+$yellowy: rgb(235, 194, 48);
+$greeny: rgb(177, 217, 159);
+$bg-gradient-green: rgb(227, 255, 214);
+$bg-gradient-yellow: rgb(255, 249, 206);
+$shadow-black: drop-shadow(0 0.625rem 2rem rgba(black, 0.3));
+$shadow-yellow: drop-shadow(0 0.2rem 1rem rgba($yellowy, 0.3));
+$shadow-green: drop-shadow(0 0.2rem 1rem rgba($greeny, 0.3));

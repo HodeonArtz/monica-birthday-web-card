@@ -1,0 +1,108 @@
+.bg {
+  width: 100%;
+  height: 100vh;
+  // overflow: scroll;
+  position: fixed;
+  // border: 1px solid black;
+  display: flex;
+  justify-content: center;
+
+  & > * {
+    position: absolute;
+  }
+  /* img[class^="texture"] {
+    height: 100vh;
+  } */
+  .pos-relative {
+    position: relative;
+
+    width: 100%;
+  }
+  .unshown {
+    opacity: 0;
+  }
+  &__textures,
+  .pos-relative {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__textures {
+    width: 100%;
+    height: 100vh;
+    .pos-relative {
+      height: 100vh;
+    }
+    & > *,
+    [class^="texture"] {
+      width: 100%;
+      position: absolute;
+    }
+
+    .texture {
+      &__dots-container {
+        height: 120vh;
+        .pos-relative {
+          width: 100%;
+          height: 100%;
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      &__paper-container {
+        display: flex;
+        justify-content: center;
+      }
+      &__paper {
+        width: 200%;
+      }
+      &__usa-bg {
+        height: 100%;
+      }
+      &__black-paper {
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+  }
+  &__marquee {
+    align-self: center;
+  }
+
+  &__decoration {
+    height: 400vh;
+    width: 100%;
+    .decoration {
+      position: absolute;
+      svg {
+        position: absolute;
+      }
+    }
+    .pos-relative {
+      height: 100%;
+    }
+    & > .pos-relative {
+      & > .decoration-icons,
+      & > .decoration-icons > .pos-relative {
+        height: 400vh;
+      }
+      & > .decoration-stickers,
+      & > .decoration-stickers > .pos-relative {
+        height: 300vh;
+      }
+    }
+
+    .decoration-stickers,
+    .sticker,
+    .sticker img {
+      position: absolute;
+    }
+    .sticker img {
+      width: 8rem;
+    }
+  }
+}

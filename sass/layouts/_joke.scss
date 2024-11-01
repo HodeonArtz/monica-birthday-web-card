@@ -1,0 +1,38 @@
+.main-content {
+  .section-joke .content {
+    position: relative;
+    display: flex;
+    [class^="decoration__"] {
+      position: absolute;
+    }
+    .decoration {
+      &__fireworks-1,
+      &__fireworks-2 {
+        width: 25rem;
+      }
+      &__fireworks-1 {
+        top: -14rem;
+        left: -6rem;
+      }
+      &__fireworks-2 {
+        bottom: -8rem;
+        right: -5rem;
+      }
+      &__eagle {
+        bottom: 0rem;
+        left: 5rem;
+        width: 31rem;
+      }
+      &__statue {
+        bottom: -15rem;
+        right: 16rem;
+        width: 12rem;
+      }
+      &__gun {
+        top: -8rem;
+        right: 8rem;
+        width: 17rem;
+      }
+    }
+  }
+}
